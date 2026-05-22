@@ -176,7 +176,7 @@ export default function ContactSystem() {
 
   {/* INSTAGRAM */}
   <a
-    href="https://instagram.com"
+    href="https://www.instagram.com/missyouare_right?igsh=MXE3bTRkN29hbm8xbQ=="
     target="_blank"
     className="
       group relative overflow-hidden

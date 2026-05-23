@@ -7,6 +7,8 @@ import myImage from "./assets/img4.png";
 
 export default function CinematicPortfolioDemo() {
 
+  
+
   const [activeProject, setActiveProject] = useState(0);
   const cardsRef = useRef([]);
 
@@ -107,11 +109,11 @@ export default function CinematicPortfolioDemo() {
             </p>
 
             <div className="flex gap-4">
-              <button className="px-7 py-3 bg-[#9c0346]  hover:scale-105 transition rounded-xl shadow-lg shadow-[#FF2E88]/25">
-                Enter System
+              <button  className="px-7 py-3 bg-[#9c0346]  hover:scale-105 transition rounded-xl shadow-lg shadow-[#FF2E88]/25">
+              <a href="#system">Enter System</a>  
               </button>
               <button className="px-7 py-3 border border-white/10    hover:bg-white/5 rounded-xl">
-                View Logs
+              <a href="#git"> View Logs</a> 
               </button>
               
             </div>
@@ -120,7 +122,7 @@ export default function CinematicPortfolioDemo() {
           {/* RIGHT - IMAGE PANEL */}
           <div ref={(el) => (cardsRef.current[12] = el)} className="appear relative h-[600px] flex items-center justify-center animate-float">
 
-            <div className="absolute w-[420px] h-[420px] bg-[#FF2E88]/15 blur-[140px] rounded-full" />
+            <div className="absolute w-[420px] h-[420px] bg-[#FF2E88]/15 blur-[140px] rounded-full" /> 
             <div className="absolute w-[320px] h-[320px] bg-[#7A5CFF]/15 blur-[140px] translate-x-10 translate-y-10 rounded-full" />
 
 {/* from here  */}
@@ -131,14 +133,12 @@ export default function CinematicPortfolioDemo() {
   <img
     src={myImage}
     alt="Nisha Shabbir"
-    className="glitch-image absolute inset-0 w-full h-full object-cover"
+    className="glitch-image absolute  w-full h-80 object-cover rounded-full mt-20"
   />
-  <div className="absolute top-6 left-6 text-xs font-mono tracking-[0.3em] text-white/60">
-   -IDENTITY NODE
-  </div>
+  
 
-  <div className="absolute bottom-6 right-6 text-xs text-[#FF2E88] tracking-[0.3em]">
-    -ACTIVE
+  <div className="absolute bottom-62 right-4 text-xs text-[#FF2E88] tracking-[0.3em]">
+    -ACTIVE <br /> <div className="ml-3.5">MODE</div> 
   </div>
   {/* WARNING TEXT */}
   <div className="
@@ -285,15 +285,17 @@ My goal is to create fast, scalable, and user-focused websites — especially fo
       <div ref={(el) => (cardsRef.current[8] = el)} className="appear p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl hover:bg-white/10 transition group">
 
         <h3 className="text-lg font-semibold text-[#FF2E88] tracking-widest">
-          FRONTEND CORE
+           CORE Languages
         </h3>
 
         <div className="mt-6 space-y-3 text-sm text-white/70">
 
           <p className="hover:text-white transition">HTML5 </p>
           <p className="hover:text-white transition">Tailwind CSS</p>
+          <p className="hover:text-white transition">C ++ </p>
           <p className="hover:text-white transition">JavaScript (ES6+)</p>
           <p className="hover:text-white transition">Python for backend </p>
+
 
           <p>Backend very soon </p>
         
@@ -367,10 +369,12 @@ My goal is to create fast, scalable, and user-focused websites — especially fo
         // PROJECT ARCHIVE
       </p>
 
-      <h2 className="mt-5 text-5xl md:text-7xl font-black leading-none tracking-[-0.05em]">
+      <h2 id="system" className="mt-5 text-5xl md:text-7xl font-black leading-none tracking-[-0.05em]">
+       
         Selected
         <br />
         Systems
+    
       </h2>
 
       <p className="mt-6 text-white/45 max-w-xl text-lg leading-relaxed">
@@ -382,7 +386,7 @@ My goal is to create fast, scalable, and user-focused websites — especially fo
     {/* MASONRY */}
     <div className="columns-1 md:columns-2 xl:columns-3 gap-6 space-y-6">
 
-      {/* CARD */}
+      {/* CARD 1 */}
       <div ref={(el) => (cardsRef.current[0] = el)} className="appear break-inside-avoid rounded-[2rem] border border-white/10 bg-white/[0.03] overflow-hidden group hover:bg-white/[0.05] transition duration-500">
 
         <div className="h-[320px] overflow-hidden">
@@ -399,50 +403,54 @@ My goal is to create fast, scalable, and user-focused websites — especially fo
           </p>
 
           <h3 className="mt-4 text-2xl font-bold leading-tight">
-            Identity Reveal
+            NIIR MOTORS
             <br />
-            Portfolio System
+            Aesthetic Car Website
           </h3>
 
           <p className="mt-4 text-white/50 leading-relaxed text-sm">
-            Boot animations, neural-loader concepts, hover-triggered visual
-            systems, and immersive transitions inspired by futuristic OS
-            interfaces.
+           NIIR is a futuristic AI-driven car platform that recommends vehicles based on user needs and budget. It delivers a cinematic, luxury showroom experience with interactive browsing and smooth UI animations.
           </p>
 
+<p className="text-[#7A5CFF]"><a href="https://nishashabbir.github.io/NIIR_CARS/" target="_blank">See Live</a></p>
           <div className="mt-6 flex gap-3 flex-wrap text-xs text-white/35">
-            <span>React</span>
+            <span>HTML5</span>
             <span>•</span>
-            <span>Tailwind</span>
+            <span>CSS</span>
             <span>•</span>
-            <span>Motion Design</span>
+            <span>Javascript</span>
           </div>
         </div>
       </div>
 
-      {/* CARD */}
+      {/* CARD 2 */}
       <div ref={(el) => (cardsRef.current[1] = el)} className="appear break-inside-avoid rounded-[2rem] border border-white/10 bg-[#0b0b12] p-8 hover:border-[#FF2E88]/20 transition duration-500">
 
         <p className="text-[#7A5CFF] text-xs tracking-[0.3em] uppercase font-mono">
-          UI RESEARCH
+          Cart System 
         </p>
 
         <h3 className="mt-6 text-4xl font-black leading-[0.95] tracking-[-0.05em]">
-          Motion
+          nish
           <br />
-          Experiments
+          TECH
         </h3>
 
         <p className="mt-6 text-white/50 leading-relaxed">
-          Exploring micro-interactions, cinematic hover systems, layered depth,
-          interface psychology, and immersive visual rhythm.
+          A responsive e-commerce cart system for tech devices that allows users to browse products, add items to cart, and manage quantities dynamically. 
         </p>
+        <p className="text-[#7A5CFF]"><a href="https://nishashabbir.github.io/nishTEC/" target="_blank">View Live</a></p>
+
 
         <div className="mt-10 h-[1px] bg-gradient-to-r from-[#7A5CFF] to-transparent opacity-40" />
 
-        <div className="mt-6 text-sm text-white/30">
-          Experimental Frontend Systems
-        </div>
+       <div className="mt-6 flex gap-3 flex-wrap text-xs text-white/35">
+            <span>HTML5</span>
+            <span>•</span>
+            <span>Tailwind CSS</span>
+            <span>•</span>
+            <span>Javascript</span>
+          </div>
       </div>
 
       {/* TALL CARD */}
@@ -465,16 +473,17 @@ My goal is to create fast, scalable, and user-focused websites — especially fo
           <h3 className="mt-5 text-4xl font-black leading-none">
             Interactive
             <br />
-            Frontend
+            SEO
             <br />
-            Systems
+            Website
           </h3>
 
           <p className="mt-5 text-white/60 text-sm max-w-sm">
-            Building interfaces that feel cinematic instead of static —
-            responsive layouts mixed with motion and atmosphere.
-          </p>
+            A professional SEO and digital marketing website built with a modern, business-focused interface. Developed to demonstrate clean UI design and professional web presentation. </p>
+            <p className="text-[#7A5CFF]"><a href="https://nishashabbir.github.io/seo-site/" target="_blank" rel="noopener noreferrer">View Live</a></p>
         </div>
+
+       
       </div>
 
       {/* SMALL WIDE CARD */}
@@ -482,22 +491,24 @@ My goal is to create fast, scalable, and user-focused websites — especially fo
 
         <div className="flex items-center justify-between">
           <p className="text-white/40 text-xs font-mono tracking-[0.3em] uppercase">
-            FRONTEND LAB
+            Dashboard
           </p>
 
           <div className="w-3 h-3 rounded-full bg-[#FF2E88] animate-pulse" />
         </div>
 
         <h3 className="mt-8 text-3xl font-bold leading-tight">
-          Layout Systems
+          Weather
           <br />
-          & Responsive Design
+          Forcast APP
         </h3>
 
         <p className="mt-5 text-white/50 text-sm leading-relaxed">
-          Modern responsive structures for portfolios, business websites,
-          product landing pages, and scalable UI architecture.
+          A sleek weather dashboard powered by live API data, delivering real-time forecasts with an aesthetic and minimal UI. It provides location-based weather insights. Built to demonstrate API integration and modern frontend dashboard design.
         </p>
+                    <p className="text-[#7A5CFF]"><a href="https://nishashabbir.github.io/WEATHER_APP/" target="_blank" rel="noopener noreferrer">View Live</a></p>
+
+
       </div>
 
       {/* GLASS CARD */}
@@ -524,6 +535,79 @@ My goal is to create fast, scalable, and user-focused websites — especially fo
           <div className="h-1 w-6 bg-[#7A5CFF]" />
         </div>
       </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section className="relative px-8 md:px-20 py-32 border-t border-white/5 overflow-hidden">
+
+  {/* glow */}
+  <div className="absolute right-0 top-0 w-[400px] h-[400px] bg-[#7A5CFF]/10 blur-[140px] rounded-full pointer-events-none" />
+
+  <div className="max-w-6xl mx-auto">
+
+    {/* small label */}
+    <p className="font-mono text-[#FF2E88] tracking-[0.3em] text-xs">
+      // OPEN SOURCE ARCHIVE
+    </p>
+
+    {/* giant heading */}
+    <div className="mt-6 flex flex-col md:flex-row md:items-end md:justify-between gap-10">
+
+      <div>
+        <h2 className="text-5xl md:text-7xl font-black leading-[0.9] tracking-tight" id="git">
+          More Projects
+          <br />
+          On GitHub
+        </h2>
+
+        <p className="mt-6 text-white/50 max-w-xl leading-relaxed">
+          Explore experiments, frontend systems, UI architecture,
+          motion concepts, and future full-stack builds currently
+          evolving inside my development workspace.
+        </p>
+      </div>
+
+      {/* github button */}
+      <a
+        href="https://github.com/NishaShabbir"
+        target="_blank"
+        className="
+          group
+          flex items-center gap-4
+          px-8 py-5
+          rounded-2xl
+          border border-white/10
+          bg-white/5
+          hover:bg-white/10
+          transition
+          backdrop-blur-xl
+        "
+      >
+
+        {/* github icon */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          className="w-7 h-7 text-white"
+        >
+          <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.2-3.37-1.2-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0112 6.84c.85 0 1.71.12 2.51.35 1.9-1.33 2.74-1.05 2.74-1.05.56 1.42.21 2.46.11 2.72.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.82-4.57 5.08.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.6.69.49A10.03 10.03 0 0022 12.23C22 6.58 17.52 2 12 2z"/>
+        </svg>
+
+        <div>
+          <p className="text-sm text-white/40">
+            Access Repository
+          </p>
+
+          <p className="font-semibold tracking-wide group-hover:text-[#7A5CFF] transition">
+            github.com/NishaShabbir
+          </p>
+        </div>
+
+      </a>
 
     </div>
   </div>
@@ -661,7 +745,7 @@ that can transform how humans interact with technology.
 
   </div>
 </section>
- <ContactSystem />;
+ <ContactSystem />
  <footer className="py-10 text-center text-white/40 text-sm border-t border-white/10">
   <p>© 2026 Nisha Shabbir. All rights reserved.</p>
 </footer>

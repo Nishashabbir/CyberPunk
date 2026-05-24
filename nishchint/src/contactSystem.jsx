@@ -220,7 +220,7 @@ export default function ContactSystem() {
           <div className="mt-14 p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl space-y-6">
 
             <h3 className="text-2xl font-semibold mb-4">
-              Leave a Message
+              Lets Work Together
             </h3>
 
             {/* NAME */}

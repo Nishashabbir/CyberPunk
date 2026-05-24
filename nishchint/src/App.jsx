@@ -36,14 +36,14 @@ export default function CinematicPortfolioDemo() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#050508] text-[#EAEAEA] overflow-hidden relative font-sans">
-
+<div className="min-h-screen bg-[#070A12] text-[#EAEAEA] overflow-hidden relative font-sans">
       {/* BACKGROUND EFFECTS */}
-      <div className="absolute inset-0 pointer-events-none opacity-20 bg-[url('https://www.transparenttextures.com/patterns/noise.png')]" />
-      <div className="absolute inset-0 pointer-events-none opacity-[0.04] bg-[repeating-linear-gradient(0deg,rgba(255,255,255,0.04)_0px,rgba(0,0,0,0)_3px)]" />
-
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,46,136,0.18),transparent_45%),radial-gradient(circle_at_bottom_left,rgba(122,92,255,0.12),transparent_50%)]" />
-
+     {/* CLEAN CYBER GLOW BACKGROUND */}
+<div className="absolute inset-0 pointer-events-none">
+  <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(122,92,255,0.18),transparent_60%)]" />
+  
+  <div className="absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(122,92,255,0.12),transparent_60%)]" />
+</div>
       {/* LOADER */}
      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md animate-fadeOut">
         <div className="w-full max-w-2xl px-6">
@@ -77,7 +77,7 @@ export default function CinematicPortfolioDemo() {
       </div>
 
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center px-8 md:px-20">
+      <section className="relative min-h-screen flex items-center px-8 md:px-20 mt-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center w-full z-10">
 
           {/* LEFT */}
@@ -146,9 +146,7 @@ export default function CinematicPortfolioDemo() {
     opacity-0 transition duration-200
     group-hover:opacity-100
   ">
-    <p className="text-xs font-mono tracking-[0.3em] text-[#FF2E88] rotate-90 whitespace-nowrap">
-      DON'T HOVER ME!
-    </p>
+   
   </div>
 
 </div>
@@ -294,7 +292,7 @@ My goal is to create fast, scalable, and user-focused websites — especially fo
           <p className="hover:text-white transition">Tailwind CSS</p>
           <p className="hover:text-white transition">C ++ </p>
           <p className="hover:text-white transition">JavaScript (ES6+)</p>
-          <p className="hover:text-white transition">Python for backend </p>
+          <p className="hover:text-white transition">Python  </p>
 
 
           <p>Backend very soon </p>

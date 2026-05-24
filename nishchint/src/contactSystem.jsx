@@ -6,6 +6,7 @@ export default function ContactSystem() {
   const [sending, setSending] = useState(false);
 
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const launchSystem = () => {
@@ -28,6 +29,7 @@ export default function ContactSystem() {
     try {
       const formData = {
         name,
+        email,
         message,
         time: new Date().toISOString(),
       };
@@ -38,6 +40,7 @@ export default function ContactSystem() {
       });
 
       setName("");
+      setEmail("");
       setMessage("");
 
       alert("Transmission Sent!");
@@ -229,6 +232,14 @@ export default function ContactSystem() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Your Name"
+              className="w-full bg-black/30 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-[#FF2E88]"
+            />
+            {/* EMAIL */}
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Your email"
               className="w-full bg-black/30 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-[#FF2E88]"
             />
 

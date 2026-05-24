@@ -3,7 +3,8 @@ import ContactSystem from "./contactSystem";
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
 
-import myImage from "./assets/img4.png";
+import myImage from "./assets/avatar.png";
+import myImg from "./assets/img4.png";
 
 export default function CinematicPortfolioDemo() {
 
@@ -87,9 +88,7 @@ export default function CinematicPortfolioDemo() {
             </p>
 {/* from here  */}
 <div ref={(el) => (cardsRef.current[11] = el)} className="appear relative inline-block">
-<p className="font-mono text-[#FF2E88] tracking-[0.6em] text-xs mb-2 mt-3">
-  {/* the shadow for the title  */}
-</p>
+
   {/* glitch layer behind */}
   <h1 className="absolute top-0 left-0 text-6xl md:text-7xl font-black leading-[0.9] tracking-tight text-[#FF2E88] opacity-40 blur-[1px] animate-glitchText">
     NISHA<br/>SHABBIR
@@ -389,7 +388,7 @@ My goal is to create fast, scalable, and user-focused websites — especially fo
 
         <div className="h-[320px] overflow-hidden">
           <img
-            src={myImage}
+            src={myImg}
             alt=""
             className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
           />
@@ -457,7 +456,7 @@ My goal is to create fast, scalable, and user-focused websites — especially fo
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black z-10" />
 
         <img
-          src={myImage}
+          src={myImg}
           alt=""
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-1000"
         />

@@ -37,7 +37,7 @@ export default function CinematicPortfolioDemo() {
   }, []);
 
   return (
-<div className="min-h-screen bg-[#070A12] text-[#EAEAEA] overflow-hidden relative font-sans">
+    <div className="min-h-screen bg-[#070A12] text-[#EAEAEA] relative font-sans max-w-[100vw] overflow-x-clip overflow-y-clip">
       {/* BACKGROUND EFFECTS */}
      {/* CLEAN CYBER GLOW BACKGROUND */}
 <div className="absolute inset-0 pointer-events-none">
@@ -78,7 +78,7 @@ export default function CinematicPortfolioDemo() {
       </div>
 
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center px-8 md:px-20 mt-10">
+      <section className="relative min-h-screen flex items-center px-8 md:px-20 ">
         <div className="grid lg:grid-cols-2 gap-16 items-center w-full z-10">
 
           {/* LEFT */}
